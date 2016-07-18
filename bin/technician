@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require 'json'
+require 'concourse-technician/cli'
+require 'concourse-technician/database'
+
+ConcourseTechnician::Database.new.tap do |database|
+  ConcourseTechnician::CLI.new(database: database).execute(*ARGV).tap do |out|
+    puts JSON.dump(out.respond_to?(:to_i) ? out.to_i : out.to_a) if out
+  end
+end
