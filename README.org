@@ -11,6 +11,25 @@
     gem install concourse-technician
   #+END_SRC
 
+* Configuration
+
+  ~concourse-technician~ needs to be pointed at your Concourse database. It
+  looks for a configuration file at =~/.config/concourse-technician.yaml=. To
+  tell it to look somewhere else, set =CONCOURSE_TECHNICIAN_CONFIG= in the
+  environment.
+
+** Example
+
+   #+BEGIN_SRC yaml
+     ---
+     adapter: postgres
+     database: my-awesome-database
+     host: localhost
+     password: MyVerySecurePasswordStoredUnencryptedOnDisk
+     port: 5432
+     user: me
+   #+END_SRC
+
 * Usage
 
   To get a list of abandoned volumes...
@@ -27,7 +46,7 @@
 
 * License
 
-  ~dbviz~ is available under the [[https://tldrlegal.com/license/mit-license][MIT License]]. See ~LICENSE.txt~ for the full text.
+  ~concourse-technician~ is available under the [[https://tldrlegal.com/license/mit-license][MIT License]]. See ~LICENSE.txt~ for the full text.
 
 * Contributors
 
