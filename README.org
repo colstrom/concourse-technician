@@ -1,0 +1,34 @@
+#+TITLE: Concourse Technician
+#+LATEX: \pagebreak
+
+* Overview
+
+  A tool to diangose and repair issues with Concourse.
+
+* Installation
+
+  #+BEGIN_SRC shell
+    gem install concourse-technician
+  #+END_SRC
+
+* Usage
+
+  To get a list of abandoned volumes...
+
+  #+BEGIN_SRC shell
+    technician abandoned_volumes
+  #+END_SRC
+
+  To clean up all abandoned volumes...
+
+  #+BEGIN_SRC shell
+    technician delete_abandoned_volumes
+  #+END_SRC
+
+* License
+
+  ~dbviz~ is available under the [[https://tldrlegal.com/license/mit-license][MIT License]]. See ~LICENSE.txt~ for the full text.
+
+* Contributors
+
+  - [[https://colstrom.github.io/][Chris Olstrom]] | [[mailto:chris@olstrom.com][e-mail]] | [[https://twitter.com/ChrisOlstrom][Twitter]]
