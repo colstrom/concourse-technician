@@ -36,7 +36,7 @@ module ConcourseTechnician
 
     Contract None => Any
     def repair
-      detected ? repair! : abort
+      detected? ? repair! : abort
     end
 
     private
