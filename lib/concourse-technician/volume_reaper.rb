@@ -41,7 +41,7 @@ module ConcourseTechnician
 
     private
 
-    Contract RespondTo[:to_s] => Bool
+    Contract RespondTo[:to_s], Maybe[Proc] => Bool
     def env?(key)
       if ![nil, 'nil', 'false'].include? ENV[key.to_s.upcase]
         true
