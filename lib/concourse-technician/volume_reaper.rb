@@ -124,10 +124,10 @@ module ConcourseTechnician
 
     Contract None => Any
     def repair!
-      worker.stop if worker.active?
+      worker.stop if worker.active? && !env?(:NOOP)
       reap_subvolumes
       reap_dead_volumes
-      worker.start
+      worker.start unless env?(:NOOP)
     end
   end
 end
