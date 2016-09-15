@@ -16,4 +16,5 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency 'contracts', '~> 0.14', '>= 0.14.0'
   gem.add_runtime_dependency 'instacli', '~> 1.1', '>= 1.1.2'
   gem.add_runtime_dependency 'sequel', '~> 4.36', '>= 4.36.0'
+  gem.add_runtime_dependency 'systemized', '~> 0.2', '>= 0.2.4'
 end
