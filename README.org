@@ -46,6 +46,12 @@
     technician database delete_abandoned_volumes
   #+END_SRC
 
+  To check if a worker is failing due to issues with volume reaping...
+
+  #+BEGIN_SRC shell
+    technician volume_reaper damaged
+  #+END_SRC
+
 * License
 
   ~concourse-technician~ is available under the [[https://tldrlegal.com/license/mit-license][MIT License]]. See ~LICENSE.txt~ for the full text.
