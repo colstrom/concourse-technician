@@ -15,7 +15,11 @@ module ConcourseTechnician
 
     Contract None => HashOf[String, Or[String, Num]]
     def settings
-      @config ||= YAML.load_file settings_path
+      @config ||= if File.exist? settings_path
+                    YAML.load_file settings_path
+                  else
+                    {}
+                  end
     end
   end
 end
