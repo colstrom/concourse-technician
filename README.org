@@ -52,6 +52,12 @@
     technician volume_reaper damaged
   #+END_SRC
 
+  To resolve issues with volume reaping...
+
+  #+BEGIN_SRC shell
+  technician volume_reaper repair
+  #+END_SRC
+
 * License
 
   ~concourse-technician~ is available under the [[https://tldrlegal.com/license/mit-license][MIT License]]. See ~LICENSE.txt~ for the full text.
