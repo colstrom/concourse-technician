@@ -35,13 +35,13 @@
   To get a list of abandoned volumes...
 
   #+BEGIN_SRC shell
-    technician abandoned_volumes
+    technician database abandoned_volumes
   #+END_SRC
 
   To clean up all abandoned volumes...
 
   #+BEGIN_SRC shell
-    technician delete_abandoned_volumes
+    technician database delete_abandoned_volumes
   #+END_SRC
 
 * License
