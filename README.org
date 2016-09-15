@@ -28,6 +28,8 @@
      password: MyVerySecurePasswordStoredUnencryptedOnDisk
      port: 5432
      user: me
+
+     volumes_root: /concourse/volumes
    #+END_SRC
 
 * Usage
